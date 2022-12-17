@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+ <link  rel="stylesheet" href="./assets/stlye.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <header> 
+    <h1 class="top" >Weather Dashboard</h1>
+  </header>  
+  
+  <main>
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1"></span>
+        <input type="text" class="form-control" id="city" placeholder="City" aria-describedby="sizing-addon1">
+        <br> <button id="searchBtn" class="search"> Search</button>
+      </div>
+
+      <div class="col-12 col-md-8">
+        <h2 class="subtitle">5-Day Forecast: <span id="forecast"></span></h2>
+        <div id="forecast-container" class="list-group"></div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="./script.js"></script>
+  </main>
+</body>
+</html>
