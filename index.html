@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
  <link  rel="stylesheet" href="./assets/stlye.css">
-    <title>Document</title>
+    <title>The forcast</title>
 </head>
 
 <body>
@@ -21,10 +21,14 @@
         <br> <button id="searchBtn" class="search"> Search</button>
       </div>
 
-      <div class="col-12 col-md-8">
-        <h2 class="subtitle">5-Day Forecast: <span id="forecast"></span></h2>
-        <div id="forecast-container" class="list-group"></div>
-      </div>
+     <div class="card">
+      <h2 class="city">Weather in portland</h2>
+      <div class="temp">51°F</div>
+      <img src="" alt="" class="icon"/>
+      <div class="desctription">cloudy</div>
+      <div class="humidity">humidity:60%</div>
+      <div class="wind">wind speed:6.2km/h</div>
+     </div>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="./script.js"></script>
   </main>

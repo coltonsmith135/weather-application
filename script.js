@@ -1,6 +1,7 @@
 var searchBtn = $('#searchBtn');
 var input = $('#city');
 
+
 searchBtn.on('click', function() {
 console.log(input.val());
 getLocation(input.val());
@@ -18,6 +19,7 @@ fetch (url)
  }) .then(function (data) {
     console.log(data[0].lat, data[0].lon)
     weather(data[0].lat, data[0].lon);
+    
  })
 }
 
@@ -29,6 +31,17 @@ function weather(lat,lon) {
    .then (function(response) {
     return response.json()
    }) .then(function(data) {
-    console.log(data)
+       this.displayWeather(data);
+    
+      
    })
 }
+
+//function displayWeather(data) {
+//var { name } = data;
+//var { icon, description} = data.weather[0];
+//var { temp, humidity } = data.main; 
+//var { speed } = data.wind;
+//console.log(name,icon,description,temp,humidity,speed);
+//document.
+//}
