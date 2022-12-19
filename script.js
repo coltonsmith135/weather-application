@@ -1,6 +1,11 @@
 var searchBtn = $('#searchBtn');
 var input = $('#city');
-
+var townEl = $('#town');
+var degrEl = $('#degr');
+var infoEl = $('#info');
+var airEl = $('#air');
+var speedEl = $('#speed');
+var iconEl = $('#icon');
 
 searchBtn.on('click', function() {
 console.log(input.val());
@@ -37,11 +42,16 @@ function weather(lat,lon) {
    })
 }
 
-//function displayWeather(data) {
-//var { name } = data;
-//var { icon, description} = data.weather[0];
-//var { temp, humidity } = data.main; 
-//var { speed } = data.wind;
-//console.log(name,icon,description,temp,humidity,speed);
-//document.
-//}
+function displayWeather(data) {
+var { name } = data;
+var { icon, description} = data.weather[0];
+var { temp, humidity } = data.main; 
+var { speed } = data.wind;
+console.log(name,icon,description,temp,humidity,speed);
+town.text("weather in " + name);
+iconEl.text('http://openweathermap.org/img/wn/' + icon + '.png');
+infoEl.text(description);
+degrEl.text (temp + '°F');
+airEl.text("Humidity: " + humidity + '%');
+speedEl.text('Wind speed: ' + speed + 'MPH');
+};
