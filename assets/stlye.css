@@ -2,9 +2,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: grey;
+}
+
 .top {
-    background-color: #000000d0;
-    color: rgb(252, 251, 251);
+    background-color: #ADEFD1FF;
+    color: #00203FFF;
     text-align: center;
     width: 100%;
     height: 100px;
@@ -20,22 +24,26 @@
 .search {
     width: 25%;
     height: 30px;
-    background-color: black;
-    color: white;
+    background-color: #ADEFD1FF;
+    color: #00203FFF;
     margin: 10px;
     
    
 }
 
 .card {
-   background-color: #000000d0;
-   color: white;
+   background-color: #ADEFD1FF;
+   color: #00203FFF;
    width: 900px;
-   height: 150px;
+   height: 250px;
    margin-left: 35%;
    border-radius: 20px;
 }
 
 .city {
     text-align: center;
+}
+
+.information {
+   text-align: center;
 }
