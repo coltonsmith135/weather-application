@@ -8,3 +8,6 @@ I build this weather application so that when the user is traveling they can loo
 
 I learned how to use an api key to pull certain information on the weather and then apply that information to my webpage to show up as the user inputs the city of they're choice.
 
+https://coltonsmith135.github.io/weather-application/
+
+![Weather application](./assets/weather.png)
